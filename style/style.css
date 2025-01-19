@@ -11,11 +11,6 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    padding: 0 100px;
-    margin: 0 auto;
-}
-
 main {
     margin: 0 auto;
     max-width: 1440px;
@@ -24,10 +19,6 @@ main {
 
 section {
     margin-bottom: 128px;
-}
-
-header {
-    background: rgba(229, 84, 115, 0.1);
 }
 
 /* Common  */
@@ -63,6 +54,13 @@ span{
     color: rgb(229, 84, 115);
 }
 /* hero section styles */
+header {
+    padding: 0 100px;
+    margin: 0 auto;
+}
+header {
+    background: rgba(229, 84, 115, 0.1);
+}
 .hero {
     max-width: 1440px;
     margin: 0 auto;
@@ -78,7 +76,7 @@ p {
 
 .hero-title {
     color: rgb(39, 39, 39);
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 800;
 
 }
