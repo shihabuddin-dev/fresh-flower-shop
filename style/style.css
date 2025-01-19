@@ -76,7 +76,7 @@ p {
 
 .hero-title {
     color: rgb(39, 39, 39);
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 800;
 
 }
@@ -172,7 +172,31 @@ font-size: 1rem;
     border-radius: 8px;
 background: rgb(255, 255, 255);
 }
+/* Footer section styles */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+footer div{
+    max-width: 1440px;
+    margin: 0 auto;
 
+}
+footer h2{
+    font-size: 1.5rem;
+font-weight: 800;
+color: white;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    opacity: 0.8;
+}
+footer small{
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 0.8;
+}
 
 /* Media query for small device */
 @media only screen and (max-width:576px) {
@@ -218,4 +242,14 @@ background: rgb(255, 255, 255);
         grid-template-columns: repeat(1, 1fr);
         justify-self: center;
     }
+    .deal{
+        width: 100%;
+
+    }
+    .data input{
+        padding: 23px 22px 23px 22px;
+        border-radius: 8px;
+    background: rgb(255, 255, 255);
+    }
+    
 }
