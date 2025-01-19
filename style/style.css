@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +12,11 @@ body {
     box-sizing: border-box;
 }
 
+.hero,
+section {
+    margin-bottom: 128px;
+}
+
 .hero {
     background: rgba(229, 84, 115, 0.1);
     display: flex;
@@ -20,9 +24,23 @@ body {
     align-items: center;
     gap: 20px;
     padding: 0 40px;
+    text-align: left;
+}
+.hero-img{
+    width: 635px;
+height: 800px;
+}
+.hero-img img{
+    height: 100%;
+}
+/* Common  */
+.section-title {
+    color: rgb(39, 39, 39);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 48px;
 }
 
-/* Common  */
 .section-description {
     color: rgba(39, 39, 39, 0.6);
     font-size: 1.1rem;
@@ -40,8 +58,15 @@ body {
     font-weight: 700;
     border: none;
 }
-
+.display-flex{
+    display: flex;
+}
 /* hero section styles */
+.feature h2,
+p {
+    text-align: center;
+}
+
 .hero-title {
     color: rgb(39, 39, 39);
     font-size: 5rem;
@@ -49,14 +74,61 @@ body {
     line-height: 96px;
 }
 
+/* feature section styles */
+.feature-flower {
+    padding-top: 40px;
+   justify-content: space-evenly;
 
 
+}
+
+.feature-flower1,
+.feature-flower2,
+.feature-flower3 {
+    width: 30%;
+    height: auto;
+    border-radius: 300px 300px 0px 0px;
+    
+}
+
+.feature-flower1{
+    background: rgba(167, 33, 98, 0.15);
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.feature-flower2{
+    background: rgba(5, 151, 160, 0.15);
+    align-items: center;
+    justify-content: center;
+    
+}
+.feature-flower3{
+    background: rgba(71, 125, 17, 0.15);
+    align-items: center;
+    justify-content: center;
+}
 
 
-@media only screen and (max-width:576px){
-    .hero{
+/* Media query for small device */
+@media only screen and (max-width:576px) {
+    .hero {
         flex-direction: column;
         text-align: center;
     }
+    .feature-flower{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+    }
+    .feature-flower1,
+.feature-flower2,
+.feature-flower3 {
+    width: 100%;
+    height: auto;
     
+    
+    
+}
+
 }
