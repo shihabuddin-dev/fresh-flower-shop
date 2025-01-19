@@ -139,15 +139,41 @@ p {
     border-radius: 8px;
     background: rgba(39, 39, 39, 0.05);
 }
+
 /* .Instagram Section styles  */
-.instagram{
+.instagram {
     text-align: center;
 }
-.instagram-img{
+
+.instagram-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
+
+/* Deals  */
+.deal {
+    background-image: url(../images/latrest-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 449px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.data input{
+    color: rgba(39, 39, 39, 0.6);
+font-size: 1rem;
+    border: none;
+    padding: 23px 513px 23px 23px;
+    border-radius: 8px;
+background: rgb(255, 255, 255);
+}
+
+
 /* Media query for small device */
 @media only screen and (max-width:576px) {
     .hero {
@@ -155,7 +181,8 @@ p {
         text-align: center;
         gap: 40px;
     }
-    .hero-img img{
+
+    .hero-img img {
         width: 100%;
     }
 
@@ -186,7 +213,8 @@ p {
         align-items: center;
         padding: 20px 0;
     }
-    .instagram-img{
+
+    .instagram-img {
         grid-template-columns: repeat(1, 1fr);
         justify-self: center;
     }
