@@ -108,8 +108,23 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-
+.feature-flower-text{
+    justify-content: space-around;
+}
+.feature-flower-text a{
+    color: rgb(39, 39, 39);
+font-size: 1.5rem;
+font-weight: 700;
+}
+/* Dash section styles */
+.dash{
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+background: rgba(39, 39, 39, 0.05);
+}
 /* Media query for small device */
 @media only screen and (max-width:576px) {
     .hero {
@@ -127,8 +142,8 @@ p {
     width: 100%;
     height: auto;
     
-    
-    
 }
-
+.feature-flower-text{
+    display: none;
+}
 }
