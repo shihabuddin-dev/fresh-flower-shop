@@ -8,31 +8,28 @@
 body {
     font-family: "Lato", serif;
     margin: 0 auto;
-    max-width: 1440px;
     box-sizing: border-box;
 }
 
-.hero,
+header {
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
 section {
     margin-bottom: 128px;
 }
 
-.hero {
+header {
     background: rgba(229, 84, 115, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 0 40px;
-    text-align: left;
 }
-.hero-img{
-    width: 635px;
-height: 800px;
-}
-.hero-img img{
-    height: 100%;
-}
+
 /* Common  */
 .section-title {
     color: rgb(39, 39, 39);
@@ -58,10 +55,20 @@ height: 800px;
     font-weight: 700;
     border: none;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
 }
+
 /* hero section styles */
+.hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 .feature h2,
 p {
     text-align: center;
@@ -69,17 +76,19 @@ p {
 
 .hero-title {
     color: rgb(39, 39, 39);
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
-    line-height: 96px;
+
 }
 
 /* feature section styles */
+.feature {
+    margin-top: 100px;
+}
+
 .feature-flower {
     padding-top: 40px;
-   justify-content: space-evenly;
-
-
+    justify-content: space-evenly;
 }
 
 .feature-flower1,
@@ -88,62 +97,97 @@ p {
     width: 30%;
     height: auto;
     border-radius: 300px 300px 0px 0px;
-    
+
 }
 
-.feature-flower1{
+.feature-flower1 {
     background: rgba(167, 33, 98, 0.15);
     align-items: center;
     justify-content: center;
     padding-top: 50px;
 }
-.feature-flower2{
+
+.feature-flower2 {
     background: rgba(5, 151, 160, 0.15);
     align-items: center;
     justify-content: center;
-    
+
 }
-.feature-flower3{
+
+.feature-flower3 {
     background: rgba(71, 125, 17, 0.15);
     align-items: center;
     justify-content: center;
 }
-.feature-flower-text{
+
+.feature-flower-text {
     justify-content: space-around;
 }
-.feature-flower-text a{
+
+.feature-flower-text a {
     color: rgb(39, 39, 39);
-font-size: 1.5rem;
-font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
+
 /* Dash section styles */
-.dash{
+.dash {
     height: 300px;
     text-align: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 8px;
-background: rgba(39, 39, 39, 0.05);
+    background: rgba(39, 39, 39, 0.05);
+}
+/* .Instagram Section styles  */
+.instagram{
+    text-align: center;
+}
+.instagram-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 /* Media query for small device */
 @media only screen and (max-width:576px) {
     .hero {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
     }
-    .feature-flower{
+    .hero-img img{
+        width: 100%;
+    }
+
+    .feature-flower {
         display: grid;
         grid-template-columns: auto;
         gap: 50px;
     }
+
     .feature-flower1,
-.feature-flower2,
-.feature-flower3 {
-    width: 100%;
-    height: auto;
-    
-}
-.feature-flower-text{
-    display: none;
-}
+    .feature-flower2,
+    .feature-flower3 {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .feature-flower-text {
+        display: none;
+    }
+
+    .dash {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .instagram-img{
+        grid-template-columns: repeat(1, 1fr);
+        justify-self: center;
+    }
 }
