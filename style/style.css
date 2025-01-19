@@ -59,7 +59,9 @@ header {
 .display-flex {
     display: flex;
 }
-
+span{
+    color: rgb(229, 84, 115);
+}
 /* hero section styles */
 .hero {
     max-width: 1440px;
@@ -139,7 +141,14 @@ p {
     border-radius: 8px;
     background: rgba(39, 39, 39, 0.05);
 }
-
+/* Hot deal 25% off section styles */
+.off{
+    text-align: center;
+    border-radius: 8px;
+background: rgba(229, 84, 115, 0.05);
+    justify-content: space-evenly;
+    align-items: center;
+}
 /* .Instagram Section styles  */
 .instagram {
     text-align: center;
@@ -176,7 +185,7 @@ background: rgb(255, 255, 255);
 footer{
     background-color: black;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
 }
 footer div{
     max-width: 1440px;
@@ -237,7 +246,13 @@ footer small{
         align-items: center;
         padding: 20px 0;
     }
-
+.off{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+}
     .instagram-img {
         grid-template-columns: repeat(1, 1fr);
         justify-self: center;
